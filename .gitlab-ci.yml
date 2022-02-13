@@ -1,0 +1,12 @@
+image: python:latest
+pages:
+  stage: deploy
+  script:
+    - pip install mkdocs-material
+    - pip install fontawesome-markdown
+    - mkdocs build --clean --no-directory-urls --site-dir public
+  artifacts:
+    paths:
+      - public
+  only:
+    - main

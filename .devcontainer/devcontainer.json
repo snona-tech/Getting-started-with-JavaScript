@@ -1,0 +1,22 @@
+{
+    "name": "mkdocs_material",
+	"build": {
+		"dockerfile": "Dockerfile",
+		"context": "..",
+		"args": {
+			"MKDOCS_MATERIAL_VERSION": "latest"
+		}
+	},
+    "extensions": [
+        "yzhang.markdown-all-in-one",
+        "redhat.vscode-yaml",
+        "shardulm94.trailing-spaces",
+        "oderwat.indent-rainbow",
+        "hediet.vscode-drawio",
+        "nopeslide.vscode-drawio-plugin-mermaid"
+    ],
+    "forwardPorts": [
+        8000
+    ],
+    "postAttachCommand": "pip install -r requirements.txt"
+}

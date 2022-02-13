@@ -1,0 +1,86 @@
+site_name: IT勉強会 ～ JavaScript編 ～
+
+theme:
+  name: material
+  language: ja
+
+  favicon: assets/favicon.png
+  icon:
+    logo: material/language-javascript
+
+  palette:
+    - scheme: slate
+      primary: blue grey
+      accent: deep purple
+      toggle:
+        icon: material/weather-night
+        name: Switch to light mode
+    - scheme: default
+      primary: default
+      accent: indigo
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to dark mode
+
+  features:
+    - navigation.instant
+    - navigation.tracking
+    # - navigation.tabs
+    # - navigation.tabs.sticky
+    # - navigation.expand
+    # - navigation.indexes
+    # - navigation.sections
+    # - navigation.top
+    # - toc.integrate
+    - content.tabs.link
+
+plugins:
+  - search:
+      lang: ja
+
+markdown_extensions:
+  - admonition
+  - footnotes
+  - def_list
+  - attr_list
+  - md_in_html
+  - pymdownx.critic
+  - pymdownx.caret
+  - pymdownx.keys
+  - pymdownx.mark
+  - pymdownx.tilde
+  - pymdownx.details
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - pymdownx.superfences
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.tabbed:
+      alternate_style: true
+  - pymdownx.emoji:
+      emoji_index: !!python/name:materialx.emoji.twemoji
+      emoji_generator: !!python/name:materialx.emoji.to_svg
+  - toc:
+      permalink: true
+
+extra_css:
+  - stylesheets/icon.css
+
+nav:
+  - 内容:
+      - 00. はじめに: index.md
+      - 01. Webサイト:
+          - 一般的なWebサイトの構成: section/web/about.md
+      - 02. JavaScript:
+          - JavaScriptとは: section/js/about.md
+      - 03. JavaScriptハンズオン:
+          - 実行環境: section/js_handson/env.md
+          - 基本構文: section/js_handson/syntax.md
+          - HTTP通信: section/js_handson/http.md
+          - DOM操作: section/js_handson/dom.md
+          - HTMLとJavaScript: section/js_handson/js_in_html.md
+          - イベント: section/js_handson/event.md
+      - 04. 演習:
+          - 挑戦してみよう: section/exercise/challenge.md
