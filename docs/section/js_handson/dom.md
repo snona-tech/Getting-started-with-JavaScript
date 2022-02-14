@@ -88,6 +88,31 @@ HTML要素はプロパティを保持しており、プロパティを編集す�
 | after        | 指定したHTML要素の後に挿入する                                    |
 | insertBefore | 指定したHTML要素の中にある、第2引数で指定した子要素の前に挿入する |
 
+## HTML要素の値取得
+
+上記の節で見たように、`innerText`プロパティの値は`<タグ名>XXX</タグ名>`の`XXX`の部分に相当する。<br>
+他にも、`input`タグや`select`タグの入力値は`value`プロパティから取得できる。
+
+!!! example "使用例"
+
+    入力欄(input)に入力された値を取得する。
+
+    1. 入力欄を生成する。
+
+        ```javascript
+        let newInput = document.createElement('input');
+        newInput.setAttribute('type', 'text');
+        let body = document.getElementsByTagName('body')[0]
+        body.appendChild(newInput);
+        ```
+
+    2. ブラウザから値を入力する。
+    3. `value`プロパティから値を取得する。
+
+        ```javascript
+        console.log(newInput.value);
+        ```
+
 ## HTML要素の削除
 
 `HTML要素.remove()`で削除できる。<br>
