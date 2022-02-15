@@ -79,6 +79,7 @@ nav:
           - 実行環境: section/js_handson/env.md
           - 基本構文: section/js_handson/syntax.md
           - HTTP通信: section/js_handson/http.md
+          - JSONのパース: section/js_handson/json_parse.md
           - DOM操作: section/js_handson/dom.md
           - HTMLとJavaScript: section/js_handson/js_in_html.md
           - イベント: section/js_handson/event.md

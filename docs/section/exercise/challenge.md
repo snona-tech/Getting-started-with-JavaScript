@@ -33,3 +33,18 @@
     * ZIPCODA API：https://zipcoda.net/doc
 
     また、該当する住所が存在しない場合もハンドリングし、ユーザにエラーメッセージを表示しなさい。
+
+## 電卓アプリ
+
+!!! question "問題 3-1：電卓アプリのUI"
+
+    電卓アプリの画面をHTMLとCSSで作成しなさい。
+
+    <figure markdown>
+        ![電卓アプリの画面イメージ](../../assets/images/calc.drawio.svg){ width="auto" }
+        <figcaption>電卓アプリの画面イメージ</figcaption>
+    </figure>
+
+!!! question "問題 3-2：電卓アプリの計算処理"
+
+    電卓アプリの計算処理をJavaScriptで作成し、画面と合わせて電卓アプリを完成させなさい。
