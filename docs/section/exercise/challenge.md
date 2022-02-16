@@ -1,7 +1,7 @@
 ## FizzBuzz問題
 
 プログラミング能力があるかどうかを見極める手法として提唱された問題。<br>
-以外にも現役のエンジニアでも正解できなかったりする。
+意外にも現役のエンジニアでも正解できなかったりする。
 
 !!! note "FizzBuzz問題"
 
@@ -45,6 +45,17 @@
         <figcaption>電卓アプリの画面イメージ</figcaption>
     </figure>
 
+    ??? hint "ヒント"
+
+        [Bootstrap](https://getbootstrap.jp/) などのCSSフレームワークを利用するとより効率的に画面デザインが行える。
+
 !!! question "問題 3-2：電卓アプリの計算処理"
 
     電卓アプリの計算処理をJavaScriptで作成し、画面と合わせて電卓アプリを完成させなさい。
+
+    ??? hint "ヒント"
+
+        JavaScriptには、文字列をそのままJavaScriptのプログラムとして解釈し、実行する`eval`関数がある。<br>
+        詳細は「[eval()](https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Global_Objects/eval)」を参照。
+
+        ただし、上記サイトにも記載がある通り、`eval`関数は**^^非推奨のため実際の業務では使用しない^^**こと。
